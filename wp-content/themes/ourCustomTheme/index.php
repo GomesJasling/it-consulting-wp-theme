@@ -16,11 +16,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light container">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light" id="navbar__main">
+        <div class="container">
             <a class="navbar-brand logo-placeholder" href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                id="hamburger__button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
@@ -35,25 +36,29 @@
     </nav>
     <header>
         <div class="text-container container">
-            <h1>Strategic Consulting</br>
+            <h1 class="header__title">Strategic Consulting</br>
                 and Technology Delivery</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br>
+            <p class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br>
                 Phasellus tincidunt nulla eget lacinia cursus.</p>
         </div>
         <div class="video-overlay"></div>
         <!-- TODO: add support for video format for other browsers. 
         Set poster for browsers that does not support video, set img insted of video for mobile view. -->
-        <video autoplay muted playsinline loop>
+        <video autoplay muted playsinline loop class="d-none d-md-block">
             <source src="wp-content\themes\ourCustomTheme\assets\videos\consulting-video-480.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <!--Import images with css and add overlay like here: https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css-->
+        <img class="d-md-none"
+            src="wp-content\themes\ourCustomTheme\assets\images\diverse-fashion-designers-in-a-meeting-2022-09-16-09-20-11-utc-min.jpg"
+            alt="Image can't be loaded." id="hero-img">
     </header>
     <div class="more-than-consulting">
         <div class="container">
             <div class="row">
-                <div class="col-md" id="more-than-consulting-text-placeholder">
-                    <h2>OUR CULTURE</h2>
-                    <p>
+                <div class="col-md" id="more-than-consulting__text-placeholder">
+                    <h2 class="more-than-consulting__text-placeholder__title">OUR CULTURE</h2>
+                    <p class="more-than-consulting__text-placeholder__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat, nisi vitae
                         accumsan
                         dapibus,
@@ -67,41 +72,43 @@
                     </p>
                 </div>
                 <div class="col-md" id="more-than-consulting-image-placeholder">
-                    <div class="image-container">
-                        <img src="wp-content\themes\ourCustomTheme\assets\images\young-man-working-on-laptop-2021-08-30-02-34-54-utc-min.jpg"
-                            width="220px" height="329.96px" alt="Image can't be loaded.">
-                    </div>
-                    <div class="image-container">
-                        <img src="wp-content\themes\ourCustomTheme\assets\images\iconmonstr-speech-bubble-15.svg"
-                            width="220px" alt="Image can't be loaded.">
-                        <img src="wp-content\themes\ourCustomTheme\assets\images\iconmonstr-quote-right-thin.svg"
-                            alt="Image can't be loaded." id="svg-quote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="image-container">
-                        <img class="img-fluid"
-                            src="wp-content\themes\ourCustomTheme\assets\images\influencer-with-glasses-sitting-on-couch-holding-c-2022-02-04-18-06-51-utc-min.jpg"
-                            width="220px" height="280px" alt="Image can't be loaded.">
-                    </div>
-                    <div class="image-container">
-                        <img src="wp-content\themes\ourCustomTheme\assets\images\meeting-of-designers-2022-03-30-20-23-41-utc-min.jpg"
-                            width="300px" height="200px" alt="Image can't be loaded.">
-                    </div>
-
                     <div id="c1">
+                        <div class="image-container meeting-of-designer__container">
+                            <img class="mtc__img-size meeting-of-designer__img-position"
+                                src="wp-content\themes\ourCustomTheme\assets\images\meeting-of-designers-2022-03-30-20-23-41-utc-min.jpg"
+                                alt="Image can't be loaded.">
+                        </div>
                     </div>
                     <div id="c2">
+                        <div class="image-container gir-with-glasses__container">
+                            <img class="img-fluid mtc__img-size gir-with-glasses__img-position"
+                                src="wp-content\themes\ourCustomTheme\assets\images\influencer-with-glasses-sitting-on-couch-holding-c-2022-02-04-18-06-51-utc-min.jpg"
+                                alt="Image can't be loaded.">
+                        </div>
                     </div>
                     <div id="c3">
+                        <div class="image-container young-man-working__container">
+                            <img class="mtc__img-size .young-man-working__img-position"
+                                src="wp-content\themes\ourCustomTheme\assets\images\young-man-working-on-laptop-2021-08-30-02-34-54-utc-min.jpg"
+                                alt="Image can't be loaded.">
+                        </div>
                     </div>
                     <div id="c4">
+                        <div class="image-container comment__container">
+                            <img class="comment mtc__img-size comment__svg-position "
+                                src="wp-content\themes\ourCustomTheme\assets\images\iconmonstr-speech-bubble-15.svg"
+                                alt="Image can't be loaded.">
+                            <img src="wp-content\themes\ourCustomTheme\assets\images\iconmonstr-quote-right-thin.svg"
+                                alt="Image can't be loaded." id="svg-quote">
+                            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
     <?php wp_footer(); ?>
+    <script src="wp-content/themes/ourCustomTheme/main.js"></script>
 </body>
 
 </html>

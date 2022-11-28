@@ -13,14 +13,114 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+/* General styles */
+:root {
+  --light-font-color: #f1f1f1;
+  --overlay-gradient: linear-gradient(
+    180deg,
+    #1c2e5a 0%,
+    rgba(28, 46, 90, 0.75) 17.71%,
+    rgba(28, 46, 90, 0.15) 100%
+  );
+  --light-background-color: #f4f8ff;
+  --headings-font: "Roboto";
+  --main-text-font: "RNS Sanz";
+  --img-overlay: linear-gradient(
+    to top,
+    rgba(51, 69, 98, 0.35),
+    rgba(51, 69, 98, 0.35)
+  );
+}
+
+video,
+#hero-img {
+  z-index: -2;
+}
+
+div.video-overlay,
+.content {
+  z-index: -1;
+}
+.comment,
+.young-man-working__img-position {
+  z-index: 1;
+}
+#svg-quote,
+.young-man-working__container {
+  z-index: 2;
+}
+nav,
+.comment-text {
+  z-index: 3;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 83.6vw !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 83.6vw !important;
+  }
+}
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 83.6vw !important;
+  }
+}
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 83.6vw !important;
+  }
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 83.6vw !important;
+  }
+}
+
 /* navbar section */
-/* img {
-  height: auto;
-  width: 100%;
-} */
+body {
+  position: relative;
+}
 
 nav {
+  /* background-color: rgba(225, 37, 37, 0.836); */
   background-color: rgba(0, 0, 0, 0);
+  margin-top: 7.2px;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("assets/images/iconmonstr-menu-right-lined.svg") !important;
+  filter: invert(99%) sepia(1%) saturate(120%) hue-rotate(15deg)
+    brightness(112%) contrast(89%);
+}
+
+.navbar-toggler {
+  font-size: 4vw !important;
 }
 
 nav div.container-fluid {
@@ -28,31 +128,29 @@ nav div.container-fluid {
 }
 
 nav a {
-  color: #f1f1f1 !important;
-  font-family: "RNS Sanz";
+  color: var(--light-font-color) !important;
+  font-family: var(--main-text-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  letter-spacing: 1.2px;
+  align-items: center;
+  letter-spacing: 0.015em;
+  font-size: 1.339vw;
 }
 
 nav a.logo-placeholder {
   font-style: normal;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 1.7vw;
 }
 
-a#lets-talk {
+#lets-talk {
   border-style: solid;
   border-width: 1px;
-  border-color: f1f1f1;
-  max-width: 84px;
+  border-color: var(--light-font-color);
+  max-width: 6em;
   text-align: center;
-}
-
-a.nav-link:nth-child(3) {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  max-height: 36px;
+  margin-left: 0.69444vw;
 }
 
 .navbar-toggler:focus {
@@ -60,134 +158,173 @@ a.nav-link:nth-child(3) {
 }
 
 /* hero section */
+header {
+  position: relative;
+  overflow: hidden;
+}
 
-video {
+#hero-img {
+  height: auto;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 800px;
-  min-width: 100%;
-  min-height: 800px;
-  object-position: center;
-  object-fit: cover;
-  z-index: -2;
 }
 
+video,
 div.video-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  height: auto;
   min-width: 100%;
-  min-height: 800px;
+  min-height: 60vw;
   object-position: center;
   object-fit: cover;
-  background: linear-gradient(
-    180deg,
-    #1c2e5a 0%,
-    rgba(28, 46, 90, 0.75) 17.71%,
-    rgba(28, 46, 90, 0.15) 100%
-  );
-  z-index: -1;
+}
+
+div.video-overlay {
+  background: var(--overlay-gradient);
 }
 
 .content {
   position: fixed;
   bottom: 0;
-  color: #f1f1f1;
+  color: var(--light-font-color);
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    #1c2e5a 0%,
-    rgba(28, 46, 90, 0.75) 17.71%,
-    rgba(28, 46, 90, 0.15) 100%
-  );
+  background: var(--overlay-gradient);
   padding-top: 350px;
-  z-index: -1;
 }
 
 .text-container {
-  padding-top: 190px;
-  height: 736.5px;
-  min-height: 736.5px;
+  padding-top: 22.88vw;
+  height: 60vw;
+  min-height: 60vw;
 }
 
-header h1 {
-  font-family: "Roboto";
+.header__title {
+  font-family: var(--headings-font);
   font-style: normal;
   font-weight: 900;
-  font-size: 77px;
-  line-height: 90px;
-  color: #f1f1f1;
-
+  font-size: 5.36vw;
+  line-height: 1.17em;
+  color: var(--light-font-color);
   overflow: hidden;
 }
 
-header p {
-  color: #f1f1f1;
+.header__subtitle {
+  color: var(--light-font-color);
   overflow: hidden;
-  font-family: "RNS Sanz";
+  font-family: var(--main-text-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 33px;
-  line-height: 40px;
+  font-size: 2.289vw;
+  line-height: 1.24em;
 }
 
 /* more-than-consulting */
 
 .more-than-consulting {
-  height: 650px;
-  background-color: #f4f8ff;
-}
-
-@media only screen and (max-width: 768px) {
-  div.more-than-consulting {
-    background-color: #f4f8ff;
-    height: 1105px;
-  }
+  height: 40.27778vw;
+  background-color: var(--light-background-color);
 }
 
 div#more-than-consulting-image-placeholder {
   position: relative;
-  background-color: #f4f8ff;
   min-height: 650px;
 }
 
-div#more-than-consulting-image-placeholder div.image-container:nth-child(1) {
-  position: absolute;
-  top: 61.64%;
-  left: 43.48%;
-  width: 33%;
-  height: 51%;
-}
-
-div#more-than-consulting-image-placeholder div.image-container:nth-child(1) img,
-div#more-than-consulting-image-placeholder
-  div.image-container:nth-child(2)
-  img:nth-child(1),
-div#more-than-consulting-image-placeholder div.image-container:nth-child(3) img,
-div#more-than-consulting-image-placeholder
-  div.image-container:nth-child(4)
-  img {
+.mtc__img-size {
   height: auto;
   width: 100%;
 }
 
-div#more-than-consulting-image-placeholder div.image-container:nth-child(2) {
+.gir-with-glasses__img-position,
+.meeting-of-designer__img-position,
+.young-man-working__img-position,
+.comment__svg-position,
+.gir-with-glasses__container,
+.meeting-of-designer__container,
+.young-man-working__container,
+.comment__container,
+.comment-text {
   position: absolute;
-  top: 53.8%;
-  left: 7.57%;
-  min-height: 34%;
-  min-width: 33%;
-  z-index: 1;
 }
 
-div#more-than-consulting-image-placeholder
-  div.image-container:nth-child(2)
-  img:nth-child(1) {
+.gir-with-glasses__img-position {
+  bottom: -2.77777vw;
+  right: 0;
+}
+
+.meeting-of-designer__img-position {
+  bottom: 0;
+  left: 0;
+}
+
+.young-man-working__img-position {
+  top: 0;
+  left: 0;
+}
+
+.comment__svg-position {
+  top: 0;
+  right: 0;
+}
+
+.comment-text {
+  top: 4.86112vw;
+  left: 2.36111vw;
+}
+
+.gir-with-glasses__container {
+  overflow: hidden;
+  height: 17.56943vw;
+  width: 15.34723vw;
+  bottom: 1.25vw;
+  right: 1.66666vw;
+  /* min-height: 60%; */
+  min-width: 36.77205%;
+  /* max-width: 221px; */
+}
+
+.meeting-of-designer__container {
+  width: 20.83333vw;
+  height: 13.88889vw;
+  bottom: 1.25vw;
+  left: -0.69444vw;
+  min-width: 49.91681%;
+  /* max-width: 300px; */
+  /* max-height: 200px; */
+  background: var(--img-overlay),
+    url("assets/images/meeting-of-designers-2022-03-30-20-23-41-utc-min.jpg")
+      no-repeat bottom left;
+  background-size: 100% auto;
+}
+
+.young-man-working__container {
+  height: 22.91666vw;
+  width: 15.27777vw;
+  top: -0.27778vw;
+  left: -3.75vw;
+  /* max-width: 220px; */
+  min-width: 36.60566%;
+  /* max-height: 330px; */
+  background: var(--img-overlay),
+    url("assets/images/young-man-working-on-laptop-2021-08-30-02-34-54-utc-min.jpg")
+      no-repeat top left;
+  background-size: 100% auto;
+}
+
+.comment__container {
+  height: 22.91666vw;
+  width: 14.93055vw;
+  top: -4.02777vw;
+  right: 4.86111vw;
+}
+
+.comment {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   filter: invert(36%) sepia(93%) saturate(479%) hue-rotate(173deg)
@@ -195,91 +332,186 @@ div#more-than-consulting-image-placeholder
   opacity: 0.9;
 }
 
-img#svg-quote {
+#svg-quote {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 2;
+  top: 1.59722vw;
+  left: 1.25vw;
+
   filter: invert(17%) sepia(14%) saturate(3095%) hue-rotate(186deg)
     brightness(95%) contrast(95%);
   opacity: 1;
   width: 20.7%;
 }
 
-div#more-than-consulting-image-placeholder div.image-container:nth-child(3) {
-  position: absolute;
-  top: 6.77%;
-  left: 16%;
-  width: 34%;
-  height: 43%;
+.comment-text {
+  font-family: var(--main-text-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.90277vw;
+  line-height: 1.66667vw;
+  letter-spacing: 0.02em;
+  color: var(--light-font-color);
 }
 
-div#more-than-consulting-image-placeholder div.image-container:nth-child(4) {
-  position: absolute;
-  top: 28%;
-  left: 53.03%;
-  width: 45%;
-  height: 31%;
-}
-
-div#more-than-consulting-text-placeholder {
+#more-than-consulting__text-placeholder {
   text-align: left;
-  padding-top: 125px;
+  padding-top: 8.68055vw;
 }
 
-div#more-than-consulting-text-placeholder h2 {
-  font-family: "Roboto";
-  font-size: 25px;
+.more-than-consulting__text-placeholder__title {
+  font-family: var(--headings-font);
+  font-style: normal;
   font-weight: 900;
+  font-size: 1.73611vw;
+  letter-spacing: 0.05em;
   color: #1c2e5a;
 }
 
-div#more-than-consulting-text-placeholder p,
-div#more-than-consulting-image-placeholder div.image-container:nth-child(2) p {
-  font-family: "RNS Sanz";
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  font-weight: 500;
+.more-than-consulting__text-placeholder__text {
   color: #6f6f6f;
-  padding-top: 60px;
+  padding-top: 2.77777vw;
+  font-family: var(--main-text-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.11111vw;
+  line-height: 1.66666vw;
+  letter-spacing: 0.02em;
   overflow: hidden;
 }
 
-div#more-than-consulting-image-placeholder div.image-container:nth-child(2) p {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  color: aliceblue;
+#c1,
+#c2,
+#c3,
+#c4 {
+  position: relative;
+  width: 50%;
+  height: 22.6vw;
+  max-height: 80%;
 }
 
-#c1 {
-  background-color: green;
-  position: relative;
-  float: right;
-  width: 50%;
-  height: 50%;
-  opacity: 0.5;
-}
-#c2 {
-  background-color: grey;
-  position: relative;
-  width: 50%;
-  height: 50%;
-  opacity: 0.5;
-}
+#c1,
 #c3 {
-  background-color: black;
-  position: relative;
   float: right;
-  width: 50%;
-  height: 50%;
-  opacity: 0.5;
 }
-#c4 {
-  background-color: royalblue;
-  position: relative;
-  width: 50%;
-  height: 50%;
-  opacity: 0.5;
+
+/*Mobile version*/
+
+@media (max-width: 767px) {
+  nav {
+    margin-top: 0;
+  }
+
+  nav a {
+    font-size: 4vw;
+  }
+
+  .container {
+    max-width: 78.4vw;
+  }
+
+  nav a.logo-placeholder {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5.7vw;
+  }
+
+  #lets-talk {
+    border: none;
+    margin-left: 0;
+    text-align: left;
+    padding-bottom: 10%;
+  }
+
+  video,
+  div.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    min-height: 123.25581395348837vw;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .header__title {
+    font-size: 9.3vw;
+  }
+
+  .text-container {
+    padding-top: 32.8vw;
+    height: 123.25581395348837vw;
+    min-height: 123.25581395348837vw;
+  }
+
+  .navbar-toggler {
+    padding: 0px;
+  }
+
+  .navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+  }
+
+  .header__subtitle {
+    font-size: 3.73vw;
+    padding-top: 1.2em;
+  }
+
+  .more-than-consulting {
+    height: 198vw;
+  }
+
+  .more-than-consulting__text-placeholder__title {
+    font-size: 5.8vw;
+    padding-top: 0.6em;
+  }
+
+  .more-than-consulting__text-placeholder__text {
+    font-size: 3.73vw;
+    padding-top: 2.6em;
+    line-height: 5.6vw;
+  }
+
+  #c1,
+  #c2 {
+    height: 48.6vw;
+  }
+
+  .gir-with-glasses__container {
+    height: calc(17.56943vw * 1.8);
+    width: calc(15.34723vw * 1.8);
+    right: calc(1.66666vw * 1.8);
+  }
+
+  .meeting-of-designer__container {
+    height: calc(13.88889vw * 1.8);
+    width: calc(20.83333vw * 1.8);
+  }
+
+  .comment__container {
+    height: calc(22.91666vw * 1.8);
+    width: calc(14.93055vw * 1.8);
+    top: -5.44998vw;
+    right: calc(4.86111vw * 1.8);
+  }
+
+  #svg-quote {
+    top: 2.59722vw;
+    left: 3.25vw;
+  }
+
+  .comment-text {
+    padding-top: 3.5vw;
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  .young-man-working__container {
+    height: calc(22.91666vw * 1.8);
+    width: calc(15.27777vw * 1.8);
+    top: 1.299vw;
+    left: -6.3vw;
+  }
 }
