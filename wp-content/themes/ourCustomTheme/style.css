@@ -30,6 +30,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     rgba(51, 69, 98, 0.35),
     rgba(51, 69, 98, 0.35)
   );
+  --secondaty-background: #d3e8ff;
 }
 
 video,
@@ -97,7 +98,8 @@ nav,
 }
 
 /* navbar section */
-body {
+body,
+.more-then-consulting__img-placeholder {
   position: relative;
 }
 
@@ -224,14 +226,14 @@ div.video-overlay {
   line-height: 1.24em;
 }
 
-/* more-than-consulting */
+/* our-culture */
 
-.more-than-consulting {
+.our-culture {
   height: 40.27778vw;
   background-color: var(--light-background-color);
 }
 
-div#more-than-consulting-image-placeholder {
+div#our-culture-image-placeholder {
   position: relative;
   min-height: 650px;
 }
@@ -248,7 +250,10 @@ div#more-than-consulting-image-placeholder {
 .gir-with-glasses__container,
 .meeting-of-designer__container,
 .young-man-working__container,
+.happy-man__img-container,
+.lady-on-the-bead__img-container,
 .comment__container,
+.comment-container__more-then-consutlting,
 .comment-text {
   position: absolute;
 }
@@ -353,12 +358,13 @@ div#more-than-consulting-image-placeholder {
   color: var(--light-font-color);
 }
 
-#more-than-consulting__text-placeholder {
+#our-culture__text-placeholder {
   text-align: left;
   padding-top: 8.68055vw;
 }
 
-.more-than-consulting__text-placeholder__title {
+.our-culture__text-placeholder__title,
+.more-then-consulting__title {
   font-family: var(--headings-font);
   font-style: normal;
   font-weight: 900;
@@ -367,7 +373,8 @@ div#more-than-consulting-image-placeholder {
   color: #1c2e5a;
 }
 
-.more-than-consulting__text-placeholder__text {
+.our-culture__text-placeholder__text,
+.more-then-consulting__text-placeholder__text {
   color: #6f6f6f;
   padding-top: 2.77777vw;
   font-family: var(--main-text-font);
@@ -392,6 +399,49 @@ div#more-than-consulting-image-placeholder {
 #c1,
 #c3 {
   float: right;
+}
+
+/*more-then-consulting*/
+
+.more-then-consulting {
+  height: 45.27778vw;
+  background-color: var(--secondaty-background);
+}
+
+.happy-man__img-container {
+  height: 25.91666vw;
+  width: 17.27777vw;
+  background: var(--img-overlay),
+    url("assets/images/happy-man.jpg") no-repeat top left;
+  background-size: 100% auto;
+  top: 64%;
+  left: 23%;
+}
+
+.lady-on-the-bead__img-container {
+  height: 15.27778vw;
+  width: 22.9167vw;
+  background: var(--img-overlay),
+    url("assets/images/lady-on-the-bead.jpg") no-repeat top left;
+  background-size: 100% auto;
+  top: 14.7%;
+  left: 2%;
+}
+
+.more-then-consulting__text-placeholder {
+  text-align: left;
+  padding-top: 13vw;
+}
+
+.comment-more-then-consutlting {
+  transform: none;
+}
+
+.comment-container__more-then-consutlting {
+  height: 22.91666vw;
+  width: 14.93055vw;
+  top: 46%;
+  left: 53%;
 }
 
 /*Mobile version*/
@@ -459,16 +509,18 @@ div#more-than-consulting-image-placeholder {
     padding-top: 1.2em;
   }
 
-  .more-than-consulting {
+  .our-culture {
     height: 198vw;
   }
 
-  .more-than-consulting__text-placeholder__title {
+  .our-culture__text-placeholder__title,
+  .more-then-consulting__title {
     font-size: 5.8vw;
     padding-top: 0.6em;
   }
 
-  .more-than-consulting__text-placeholder__text {
+  .our-culture__text-placeholder__text,
+  .more-then-consulting__text-placeholder__text {
     font-size: 3.73vw;
     padding-top: 2.6em;
     line-height: 5.6vw;
@@ -513,5 +565,48 @@ div#more-than-consulting-image-placeholder {
     width: calc(15.27777vw * 1.8);
     top: 1.299vw;
     left: -6.3vw;
+  }
+
+  /*More Then Consulting*/
+  .more-then-consulting {
+    height: 206vw;
+  }
+
+  .more-then-consulting__text-placeholder__text {
+    padding-top: 0;
+  }
+
+  .more-then-consulting__title {
+    padding: 11.3vw 0vw 2vw 0;
+    letter-spacing: 0.037em;
+  }
+
+  .more-then-consulting__img-placeholder {
+    height: 50vw;
+  }
+
+  .lady-on-the-bead__img-container {
+    top: 26%;
+    left: 3.5%;
+    height: 30.5vw;
+    width: 45.9167vw;
+  }
+
+  .comment-container__more-then-consutlting {
+    height: 26.91666vw;
+    width: 29.93055vw;
+    top: 71%;
+    left: 58%;
+  }
+
+  .happy-man__img-container {
+    height: 51.91666vw;
+    width: 35.27777vw;
+    top: 95%;
+    left: 25%;
+  }
+
+  .more-then-consutlting__comment-text {
+    padding: 5.5vw 0 0 0;
   }
 }

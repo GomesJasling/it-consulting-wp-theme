@@ -53,12 +53,12 @@
             src="wp-content\themes\ourCustomTheme\assets\images\diverse-fashion-designers-in-a-meeting-2022-09-16-09-20-11-utc-min.jpg"
             alt="Image can't be loaded." id="hero-img">
     </header>
-    <div class="more-than-consulting">
+    <div class="our-culture">
         <div class="container">
             <div class="row">
-                <div class="col-md" id="more-than-consulting__text-placeholder">
-                    <h2 class="more-than-consulting__text-placeholder__title">OUR CULTURE</h2>
-                    <p class="more-than-consulting__text-placeholder__text">
+                <div class="col-md" id="our-culture__text-placeholder">
+                    <h2 class="our-culture__text-placeholder__title">OUR CULTURE</h2>
+                    <p class="our-culture__text-placeholder__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat, nisi vitae
                         accumsan
                         dapibus,
@@ -71,7 +71,7 @@
                         maximus.
                     </p>
                 </div>
-                <div class="col-md" id="more-than-consulting-image-placeholder">
+                <div class="col-md" id="our-culture-image-placeholder">
                     <div id="c1">
                         <div class="image-container meeting-of-designer__container">
                             <img class="mtc__img-size meeting-of-designer__img-position"
@@ -107,6 +107,43 @@
             </div>
         </div>
     </div>
+    <div class="more-then-consulting">
+        <div class="container">
+            <div class="row">
+                <div class="col-md more-then-consulting__text-placeholder order-md-2">
+                    <h2 class="more-then-consulting__title">
+                        More Than Consulting
+                    </h2>
+                    <p class="more-then-consulting__text-placeholder__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat, nisi vitae accumsan
+                        dapibus,
+                        nisi neque congue felis, in iaculis purus nisi nec dolor. Aenean quis lorem massa. Integer
+                        scelerisque suscipit finibus. Morbi nec tellus non nisl varius interdum non nec sem.
+                        <br>
+                        <br>
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                        Aenean sed molestie diam. Cras vulputate dui arcu, ut pellentesque purus condimentum eget.
+                        Cras suscipit purus turpis, vitae lacinia ex convallis id. Suspendisse tempor ipsum et sagittis
+                        maximus.
+                    </p>
+                </div>
+                <div class="col-md more-then-consulting__img-placeholder order-md-1">
+                    <div class="lady-on-the-bead__img-container"></div>
+                    <div class="image-container comment-container__more-then-consutlting">
+                        <img class="comment mtc__img-size comment__svg-position comment-more-then-consutlting"
+                            src="wp-content\themes\ourCustomTheme\assets\images\iconmonstr-speech-bubble-15.svg"
+                            alt="Image can't be loaded.">
+                        <img src="wp-content\themes\ourCustomTheme\assets\images\iconmonstr-quote-right-thin.svg"
+                            alt="Image can't be loaded." id="svg-quote">
+                        <p class="comment-text more-then-consutlting__comment-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="happy-man__img-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php wp_footer(); ?>
     <script src="wp-content/themes/ourCustomTheme/main.js"></script>
 </body>
