@@ -74,23 +74,14 @@
                 <div class="col-md" id="our-culture-image-placeholder">
                     <div id="c1">
                         <div class="image-container meeting-of-designer__container">
-                            <img class="mtc__img-size meeting-of-designer__img-position"
-                                src="wp-content\themes\ourCustomTheme\assets\images\meeting-of-designers-2022-03-30-20-23-41-utc-min.jpg"
-                                alt="Image can't be loaded.">
                         </div>
                     </div>
                     <div id="c2">
                         <div class="image-container gir-with-glasses__container">
-                            <img class="img-fluid mtc__img-size gir-with-glasses__img-position"
-                                src="wp-content\themes\ourCustomTheme\assets\images\influencer-with-glasses-sitting-on-couch-holding-c-2022-02-04-18-06-51-utc-min.jpg"
-                                alt="Image can't be loaded.">
                         </div>
                     </div>
                     <div id="c3">
                         <div class="image-container young-man-working__container">
-                            <img class="mtc__img-size .young-man-working__img-position"
-                                src="wp-content\themes\ourCustomTheme\assets\images\young-man-working-on-laptop-2021-08-30-02-34-54-utc-min.jpg"
-                                alt="Image can't be loaded.">
                         </div>
                     </div>
                     <div id="c4">
@@ -143,7 +134,68 @@
             </div>
         </div>
     </div>
-
+    <div class="out-core-values">
+        <div class="container text-center">
+            <h1 class="out-core-values__section-title">Our Core Values</h1>
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-2 mx-auto">
+                    <img src="wp-content\themes\ourCustomTheme\assets\images\target.svg" alt="icon can't be loaded."
+                        class="out-core-values__icon-size">
+                    <h1 class="out-core-values__icon-description">Focus On Outcome</h1>
+                </div>
+                <div class="col-4 col-md-2 mx-auto">
+                    <img src="wp-content\themes\ourCustomTheme\assets\images\wheel.svg" alt="icon can't be loaded."
+                        class="out-core-values__icon-size">
+                    <h1 class="out-core-values__icon-description">Share The Wheel</h1>
+                </div>
+                <div class="col-4 col-md-2 mx-auto">
+                    <img src="wp-content\themes\ourCustomTheme\assets\images\light-buld.svg" alt="icon can't be loaded."
+                        class="out-core-values__icon-size">
+                    <h1 class="out-core-values__icon-description">Keep It Simple</h1>
+                </div>
+                <div class="col-6 col-md-2 mx-auto">
+                    <img src="wp-content\themes\ourCustomTheme\assets\images\box-on-palm.svg"
+                        alt="icon can't be loaded." class="out-core-values__icon-size">
+                    <h1 class="out-core-values__icon-description">Take Ownership</h1>
+                </div>
+                <div class="col-6 col-md-2 mx-auto">
+                    <img src="wp-content\themes\ourCustomTheme\assets\images\party.svg" alt="icon can't be loaded."
+                        class="out-core-values__icon-size">
+                    <h1 class="out-core-values__icon-description">Enjoy Your Work</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="achievements">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md">
+                    <section class="achievements__card mx-auto">
+                        <img src="wp-content\themes\ourCustomTheme\assets\images\trophy.svg" alt="icon can't be loaded."
+                            class="achievements__card__trophy-icon">
+                        <h1 class="achievements__card__number">13</h1>
+                        <p class="achievements__card__description">Awards</p>
+                    </section>
+                </div>
+                <div class="col-md">
+                    <section class="achievements__card mx-auto">
+                        <img src="wp-content\themes\ourCustomTheme\assets\images\customer.svg"
+                            alt="icon can't be loaded." class="achievements__card__customer-icon">
+                        <h1 class="achievements__card__number">20+</h1>
+                        <p class="achievements__card__description">Customers</p>
+                    </section>
+                </div>
+                <div class="col-md">
+                    <section class="achievements__card mx-auto">
+                        <img src="wp-content\themes\ourCustomTheme\assets\images\project.svg"
+                            alt="icon can't be loaded." class="achievements__card__project-icon">
+                        <h1 class="achievements__card__number">60+</h1>
+                        <p class="achievements__card__project-description">Projects</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
     <?php wp_footer(); ?>
     <script src="wp-content/themes/ourCustomTheme/main.js"></script>
 </body>

@@ -16,6 +16,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* General styles */
 :root {
   --light-font-color: #f1f1f1;
+  --dark-font-color: #1c2e5a;
+  --detail-color: #357bcd;
   --overlay-gradient: linear-gradient(
     180deg,
     #1c2e5a 0%,
@@ -99,7 +101,8 @@ nav,
 
 /* navbar section */
 body,
-.more-then-consulting__img-placeholder {
+.more-then-consulting__img-placeholder,
+.achievements__card {
   position: relative;
 }
 
@@ -235,7 +238,7 @@ div.video-overlay {
 
 div#our-culture-image-placeholder {
   position: relative;
-  min-height: 650px;
+  /* min-height: 650px; */
 }
 
 .mtc__img-size {
@@ -254,7 +257,10 @@ div#our-culture-image-placeholder {
 .lady-on-the-bead__img-container,
 .comment__container,
 .comment-container__more-then-consutlting,
-.comment-text {
+.comment-text,
+.achievements__card__trophy-icon,
+.achievements__card__customer-icon,
+.achievements__card__project-icon {
   position: absolute;
 }
 
@@ -292,6 +298,10 @@ div#our-culture-image-placeholder {
   /* min-height: 60%; */
   min-width: 36.77205%;
   /* max-width: 221px; */
+  background: var(--img-overlay),
+    url("assets/images/influencer-with-glasses-sitting-on-couch-holding-c-2022-02-04-18-06-51-utc-min.jpg")
+      no-repeat bottom -2.8vw right;
+  background-size: 100% auto;
 }
 
 .meeting-of-designer__container {
@@ -364,13 +374,14 @@ div#our-culture-image-placeholder {
 }
 
 .our-culture__text-placeholder__title,
-.more-then-consulting__title {
+.more-then-consulting__title,
+.out-core-values__section-title {
   font-family: var(--headings-font);
   font-style: normal;
   font-weight: 900;
   font-size: 1.73611vw;
   letter-spacing: 0.05em;
-  color: #1c2e5a;
+  color: var(--dark-font-color);
 }
 
 .our-culture__text-placeholder__text,
@@ -444,6 +455,102 @@ div#our-culture-image-placeholder {
   left: 53%;
 }
 
+/*our core values*/
+.out-core-values__section-title {
+  padding: 11.5vw 0 7.3vw 0;
+}
+
+.out-core-values__icon-size {
+  height: 6.94444vw;
+  width: 6.94444vw;
+}
+
+.out-core-values__icon-description {
+  font-family: var(--main-text-font);
+  color: var(--dark-font-color);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.38888vw;
+  line-height: 5.55555vw;
+}
+
+.out-core-values {
+  height: 45vw;
+  min-height: 400px;
+  background-color: var(--light-background-color) !important;
+  background: url("assets/images/our-core-values-background-image.png")
+    no-repeat top left;
+  background-size: 100% auto;
+}
+
+/*achievements*/
+
+.achievements {
+  background-color: var(--secondaty-background);
+  height: 45vw;
+  padding: 9vw 0 0 0;
+}
+
+.achievements__card {
+  background-color: var(--light-background-color);
+  height: 23.5vw;
+  width: 20vw;
+  border-bottom: 0.5vw solid var(--detail-color);
+}
+
+.achievements__card__trophy-icon,
+.achievements__card__project-icon {
+  top: 9.7%;
+  left: 9%;
+}
+
+.achievements__card__customer-icon {
+  top: 9.7%;
+  left: 12%;
+}
+
+.achievements__card__trophy-icon {
+  height: 2.77778vw;
+  width: 3.47222vw;
+}
+
+.achievements__card__customer-icon,
+.achievements__card__project-icon {
+  height: 2.77778vw;
+  width: 2.77778vw;
+}
+
+.achievements__card__number {
+  font-size: 3.47222vw;
+  color: var(--dark-font-color);
+  padding: 8.3vw 0 0 0;
+  font-family: var(--headings-font);
+  font-style: normal;
+  font-weight: 900;
+  margin: 0 0 0 0;
+}
+
+.achievements__card__description,
+.achievements__card__project-description {
+  font-size: 1.73611vw;
+  color: var(--dark-font-color);
+  font-family: var(--main-text-font);
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.achievements__card__project-description {
+  letter-spacing: 0.05em;
+}
+
+/*4k version*/
+@media (min-width: 1320px) {
+  div#our-culture-image-placeholder {
+    min-height: 650px;
+  }
+}
+
 /*Mobile version*/
 
 @media (max-width: 767px) {
@@ -514,8 +621,13 @@ div#our-culture-image-placeholder {
   }
 
   .our-culture__text-placeholder__title,
-  .more-then-consulting__title {
+  .more-then-consulting__title,
+  .out-core-values__section-title {
     font-size: 5.8vw;
+  }
+
+  .our-culture__text-placeholder__title,
+  .more-then-consulting__title {
     padding-top: 0.6em;
   }
 
@@ -608,5 +720,71 @@ div#our-culture-image-placeholder {
 
   .more-then-consutlting__comment-text {
     padding: 5.5vw 0 0 0;
+  }
+
+  /*our core values*/
+
+  .out-core-values {
+    height: 126vw;
+    background-position: top 0vw left -78vw;
+    background-size: 180% auto;
+  }
+
+  .out-core-values__section-title {
+    padding: 34vw 0 0vw 0;
+  }
+
+  .out-core-values__icon-size {
+    margin: 10.5vw 0 0 0;
+    height: 11.89302vw;
+    width: 11.89302vw;
+  }
+
+  .out-core-values__icon-description {
+    max-width: 18vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3.72093vw;
+    text-align: center;
+    line-height: 4vw;
+    padding: 2.5vw 0 0 0;
+  }
+
+  /*achievements*/
+  .achievements {
+    height: 295vw;
+    padding: 11vw 0 0 0;
+  }
+
+  .achievements__card {
+    background-color: var(--light-background-color);
+    height: 83.5vw;
+    width: 72vw;
+    border-bottom: 2.5vw solid var(--detail-color);
+    margin: 0 0 11vw 0;
+  }
+
+  .achievements__card__number {
+    padding: 30vw 0 0 0;
+    font-size: 11.62791vw;
+  }
+  .achievements__card__description,
+  .achievements__card__project-description {
+    font-size: 5.81395vw;
+  }
+
+  .achievements__card__trophy-icon {
+    height: 9.61162vw;
+    width: 12.01627vw;
+  }
+
+  .achievements__card__project-icon {
+    height: 9.7186vw;
+    width: 9.7186vw;
+  }
+
+  .achievements__card__customer-icon {
+    height: 9.69302vw;
+    width: 9.69302vw;
   }
 }
