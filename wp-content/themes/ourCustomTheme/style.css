@@ -483,6 +483,10 @@ div#our-culture-image-placeholder {
   background-size: 100% auto;
 }
 
+.out-core-values__focus-on-outcome-icon {
+  margin: 0 0 0 1vw;
+}
+
 /*achievements*/
 
 .achievements {
@@ -530,6 +534,10 @@ div#our-culture-image-placeholder {
   margin: 0 0 0 0;
 }
 
+.achievements__card__number-with-plus-sign {
+  margin: 0 0 0 0.7vw;
+}
+
 .achievements__card__description,
 .achievements__card__project-description {
   font-size: 1.73611vw;
@@ -551,8 +559,12 @@ div#our-culture-image-placeholder {
   }
 }
 
-/*Mobile version*/
+/*helpers*/
+.remove-padding {
+  padding: 0 0 0 0 !important;
+}
 
+/*Mobile version*/
 @media (max-width: 767px) {
   nav {
     margin-top: 0;
@@ -590,6 +602,16 @@ div#our-culture-image-placeholder {
     min-height: 123.25581395348837vw;
     object-position: center;
     object-fit: cover;
+  }
+
+  #hamburger__button {
+    padding: 0px 0px 4px 12px;
+    border: none;
+  }
+
+  #hambvurger-icon {
+    height: 8vw;
+    width: 8vw;
   }
 
   .header__title {
@@ -735,7 +757,7 @@ div#our-culture-image-placeholder {
   }
 
   .out-core-values__icon-size {
-    margin: 10.5vw 0 0 0;
+    margin: 12.5vw 0 0 0;
     height: 11.89302vw;
     width: 11.89302vw;
   }
@@ -750,6 +772,24 @@ div#our-culture-image-placeholder {
     padding: 2.5vw 0 0 0;
   }
 
+  .out-core-values__focus-on-outcome-icon {
+    margin: 12.5vw 0 0 2vw;
+  }
+
+  #out-core-values__take-ownership-container {
+    padding: 0 0 0 9vw;
+  }
+  #out-core-values__enjoy-your-work-container {
+    padding: 0 9vw 0 0;
+  }
+
+  .out-core-values__take-ownership-icon {
+  }
+
+  .out-core-values__take-ownership-icon,
+  .out-core-values__enjoy-your-work-icon {
+    margin-top: 5.5vw;
+  }
   /*achievements*/
   .achievements {
     height: 295vw;
@@ -768,6 +808,11 @@ div#our-culture-image-placeholder {
     padding: 30vw 0 0 0;
     font-size: 11.62791vw;
   }
+
+  .achievements__card__number-with-plus-sign {
+    margin: 0 0 0 2vw;
+  }
+
   .achievements__card__description,
   .achievements__card__project-description {
     font-size: 5.81395vw;

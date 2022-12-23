@@ -22,7 +22,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
                 id="hamburger__button">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" id="hambvurger-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
@@ -57,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md" id="our-culture__text-placeholder">
-                    <h2 class="our-culture__text-placeholder__title">OUR CULTURE</h2>
+                    <h2 class="our-culture__text-placeholder__title">Our Culture</h2>
                     <p class="our-culture__text-placeholder__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat, nisi vitae
                         accumsan
@@ -138,31 +138,32 @@
         <div class="container text-center">
             <h1 class="out-core-values__section-title">Our Core Values</h1>
             <div class="row justify-content-center">
-                <div class="col-4 col-md-2 mx-auto">
+                <section class="col-4 col-md-2 mx-auto remove-padding">
                     <img src="wp-content\themes\ourCustomTheme\assets\images\target.svg" alt="icon can't be loaded."
-                        class="out-core-values__icon-size">
+                        class="out-core-values__icon-size out-core-values__focus-on-outcome-icon">
                     <h1 class="out-core-values__icon-description">Focus On Outcome</h1>
-                </div>
-                <div class="col-4 col-md-2 mx-auto">
+                </section>
+                <section class="col-4 col-md-2 mx-auto">
                     <img src="wp-content\themes\ourCustomTheme\assets\images\wheel.svg" alt="icon can't be loaded."
                         class="out-core-values__icon-size">
                     <h1 class="out-core-values__icon-description">Share The Wheel</h1>
-                </div>
-                <div class="col-4 col-md-2 mx-auto">
+                </section>
+                <section class="col-4 col-md-2 mx-auto">
                     <img src="wp-content\themes\ourCustomTheme\assets\images\light-buld.svg" alt="icon can't be loaded."
                         class="out-core-values__icon-size">
                     <h1 class="out-core-values__icon-description">Keep It Simple</h1>
-                </div>
-                <div class="col-6 col-md-2 mx-auto">
+                </section>
+                <section class="col-6 col-md-2 mx-auto" id="out-core-values__take-ownership-container">
                     <img src="wp-content\themes\ourCustomTheme\assets\images\box-on-palm.svg"
-                        alt="icon can't be loaded." class="out-core-values__icon-size">
+                        alt="icon can't be loaded."
+                        class="out-core-values__icon-size out-core-values__take-ownership-icon">
                     <h1 class="out-core-values__icon-description">Take Ownership</h1>
-                </div>
-                <div class="col-6 col-md-2 mx-auto">
+                </section>
+                <section class="col-6 col-md-2 mx-auto" id="out-core-values__enjoy-your-work-container">
                     <img src="wp-content\themes\ourCustomTheme\assets\images\party.svg" alt="icon can't be loaded."
-                        class="out-core-values__icon-size">
+                        class="out-core-values__icon-size out-core-values__enjoy-your-work-icon">
                     <h1 class="out-core-values__icon-description">Enjoy Your Work</h1>
-                </div>
+                </section>
             </div>
         </div>
     </div>
@@ -181,7 +182,7 @@
                     <section class="achievements__card mx-auto">
                         <img src="wp-content\themes\ourCustomTheme\assets\images\customer.svg"
                             alt="icon can't be loaded." class="achievements__card__customer-icon">
-                        <h1 class="achievements__card__number">20+</h1>
+                        <h1 class="achievements__card__number achievements__card__number-with-plus-sign">20+</h1>
                         <p class="achievements__card__description">Customers</p>
                     </section>
                 </div>
@@ -189,7 +190,7 @@
                     <section class="achievements__card mx-auto">
                         <img src="wp-content\themes\ourCustomTheme\assets\images\project.svg"
                             alt="icon can't be loaded." class="achievements__card__project-icon">
-                        <h1 class="achievements__card__number">60+</h1>
+                        <h1 class="achievements__card__number achievements__card__number-with-plus-sign">60+</h1>
                         <p class="achievements__card__project-description">Projects</p>
                     </section>
                 </div>
