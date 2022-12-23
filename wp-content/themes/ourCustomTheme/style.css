@@ -57,48 +57,6 @@ nav,
   z-index: 3;
 }
 
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 83.6vw !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 83.6vw !important;
-  }
-}
-@media (min-width: 992px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm {
-    max-width: 83.6vw !important;
-  }
-}
-@media (min-width: 768px) {
-  .container,
-  .container-md,
-  .container-sm {
-    max-width: 83.6vw !important;
-  }
-}
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 83.6vw !important;
-  }
-}
-
 /* navbar section */
 body,
 .more-then-consulting__img-placeholder,
@@ -107,7 +65,6 @@ body,
 }
 
 nav {
-  /* background-color: rgba(225, 37, 37, 0.836); */
   background-color: rgba(0, 0, 0, 0);
   margin-top: 7.2px;
   position: absolute !important;
@@ -552,16 +509,108 @@ div#our-culture-image-placeholder {
   letter-spacing: 0.05em;
 }
 
+/*helpers*/
+.remove-padding {
+  padding: 0 0 0 0 !important;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #1c2e5a;
+  width: 100%;
+  height: 30.833333333333336vw;
+  color: white;
+}
+
+footer div.container.text-center div.row {
+  padding-top: 10.1%;
+}
+
+footer h3 {
+  font-size: 1.6666666666666667vw;
+  font-family: "RNS Sanz";
+  color: #357bcd;
+  overflow: "hidden";
+  margin-bottom: 1.3888888888888888vw;
+  font-weight: bold;
+}
+
+footer ul li,
+footer ul li a {
+  text-decoration: none;
+  text-align: left;
+  list-style-type: none;
+  color: #d3e8ff;
+  font-family: "RNS Sanz";
+  font-size: 1.3888888888888888vw;
+  font-weight: normal;
+  line-height: 2.9166666666666665vw;
+  letter-spacing: 0.015em;
+}
+
+footer ul {
+  padding: 0vw;
+}
+
+footer .col-md {
+  padding: 0vw;
+}
+
+input[type="submit"] {
+  background-color: #1c2e5a;
+  color: #d3e8ff;
+  font-size: 1.1111111111111112vw;
+  padding: 0.6944444444444444vw 4.8725000000000005vw;
+  border: 0.1388888888888889vw solid #d3e8ff;
+  font-family: "RNS Sanz";
+  font-weight: bold;
+  margin-top: 0.8333333333333334vw;
+}
+
+input[type="text"] {
+  background-color: #d3e8ff;
+  outline: none;
+  font-family: "RNS Sanz";
+  font-size: 1.25vw;
+  padding: 0.5555555555555556vw 0vw 0.4166666666666667vw 0.4166666666666667vw;
+  border: none;
+}
+
+.new-shape {
+  fill: #d3e8ff;
+  width: 2.8472222222222223vw;
+  height: 2.8472222222222223vw;
+  margin: 0.7291666666666666vw 0.5902777777777778vw 0.625vw 0.5902777777777778vw;
+}
+
+div#c5 {
+  height: 500px;
+}
+
+footer .col-md:nth-child(5) {
+  position: relative;
+  bottom: 1.1805555555555556vw;
+  left: 0.9027777777777777vw;
+  top: 0.1388888888888889vw;
+}
+
+footer .col-md:nth-child(5) h3 {
+  margin-bottom: 1.1111111111111112vw;
+  line-height: 1.3888888888888888vw;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 83.6vw !important;
+  }
+}
+
 /*4k version*/
 @media (min-width: 1320px) {
   div#our-culture-image-placeholder {
     min-height: 650px;
   }
-}
-
-/*helpers*/
-.remove-padding {
-  padding: 0 0 0 0 !important;
 }
 
 /*Mobile version*/
@@ -575,7 +624,7 @@ div#our-culture-image-placeholder {
   }
 
   .container {
-    max-width: 78.4vw;
+    max-width: 72.79069767441861vw;
   }
 
   nav a.logo-placeholder {
@@ -783,9 +832,6 @@ div#our-culture-image-placeholder {
     padding: 0 9vw 0 0;
   }
 
-  .out-core-values__take-ownership-icon {
-  }
-
   .out-core-values__take-ownership-icon,
   .out-core-values__enjoy-your-work-icon {
     margin-top: 5.5vw;
@@ -799,7 +845,8 @@ div#our-culture-image-placeholder {
   .achievements__card {
     background-color: var(--light-background-color);
     height: 83.5vw;
-    width: 72vw;
+    /* width: 72vw; */
+    width: 100%;
     border-bottom: 2.5vw solid var(--detail-color);
     margin: 0 0 11vw 0;
   }
@@ -831,5 +878,127 @@ div#our-culture-image-placeholder {
   .achievements__card__customer-icon {
     height: 9.69302vw;
     width: 9.69302vw;
+  }
+
+  /*footer*/
+
+  footer {
+    height: 233.95348837209303vw;
+  }
+
+  footer ul li,
+  footer ul li a {
+    text-decoration: none;
+    text-align: left;
+    list-style-type: none;
+    color: #d3e8ff;
+    font-family: "RNS Sanz";
+    font-size: 4.651162790697675vw;
+    font-weight: normal;
+    line-height: 9.534883720930234vw;
+    letter-spacing: 0.015em;
+  }
+
+  footer div.col-md-5:nth-child(1) div ul {
+    float: right;
+    position: relative;
+    width: 50%;
+    padding: 0vw;
+  }
+
+  footer div.col-md-5 {
+    padding-right: 0vw;
+    padding-left: 0vw;
+  }
+
+  footer div.col-md p {
+    font-family: "RNS Sanz";
+    color: #d3e8ff;
+    font-size: 4.651162790697675vw;
+    line-height: 9.534883720930234vw;
+  }
+
+  footer div.col-md.order-4 {
+    position: relative;
+    top: 9.348837209302324vw;
+    left: -2px;
+  }
+
+  footer div.col-md.order-5 {
+    position: relative;
+    top: 33.46511627906977vw;
+  }
+
+  footer div.col-md:nth-child(2) {
+    text-align: left;
+    padding-left: 0vw;
+    letter-spacing: 0.02em;
+    line-height: 5.5813953488372094vw;
+    position: relative;
+    top: 6.976744186046512vw;
+  }
+
+  footer div.container.text-center div.row.row-cols-6 {
+    padding-top: 0vw;
+  }
+
+  input[type="submit"] {
+    background-color: #1c2e5a;
+    color: #d3e8ff;
+    font-size: 3.7209302325581395vw;
+    padding: 2.3255813953488373vw 16.31720930232558vw;
+    border: 0.46511627906976744vw solid #d3e8ff;
+    font-family: "RNS Sanz";
+    font-weight: bold;
+    width: 72.79069767441861vw;
+    height: 11.534883720930234vw;
+    line-height: 4.4186046511627906vw;
+    margin-top: 2.7906976744186047vw;
+  }
+
+  input[type="text"] {
+    background-color: #d3e8ff;
+    outline: none;
+    font-family: "RNS Sanz";
+    font-size: 4.186046511627907vw;
+    padding: 1.8604651162790697vw 0vw 1.3953488372093024vw 1.3953488372093024vw;
+    border: none;
+    width: 72.79069767441861vw;
+    height: 9.534883720930234vw;
+    line-height: 5.5813953488372094vw;
+  }
+
+  .new-shape {
+    fill: #d3e8ff;
+    width: 9.534883720930234vw;
+    height: 9.534883720930234vw;
+    margin: 1.3953488372093024vw;
+  }
+
+  footer div.container.text-center div.row {
+    padding-top: 20%;
+  }
+
+  footer h3 {
+    font-size: 5.5813953488372094vw;
+    font-family: "RNS Sanz";
+    color: #357bcd;
+    overflow: "hidden";
+    margin-bottom: 4.651162790697675vw;
+    font-weight: bold;
+  }
+
+  footer .col-md:nth-child(5) h3 {
+    line-height: 9.388889vw;
+  }
+
+  div.col-xs.col-sm.col {
+    padding: 0vw;
+  }
+
+  hr.solid {
+    position: relative;
+    top: 62.558139534883715vw;
+    border: 0.23255813953488372vw solid #357bcd;
   }
 }
