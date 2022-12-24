@@ -16,6 +16,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* General styles */
 :root {
   --light-font-color: #f1f1f1;
+  --dark-font-color: #1c2e5a;
+  --detail-color: #357bcd;
   --overlay-gradient: linear-gradient(
     180deg,
     #1c2e5a 0%,
@@ -30,6 +32,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     rgba(51, 69, 98, 0.35),
     rgba(51, 69, 98, 0.35)
   );
+  --secondaty-background: #d3e8ff;
 }
 
 video,
@@ -54,55 +57,14 @@ nav,
   z-index: 3;
 }
 
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 83.6vw !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 83.6vw !important;
-  }
-}
-@media (min-width: 992px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm {
-    max-width: 83.6vw !important;
-  }
-}
-@media (min-width: 768px) {
-  .container,
-  .container-md,
-  .container-sm {
-    max-width: 83.6vw !important;
-  }
-}
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 83.6vw !important;
-  }
-}
-
 /* navbar section */
-body {
+body,
+.more-then-consulting__img-placeholder,
+.achievements__card {
   position: relative;
 }
 
 nav {
-  /* background-color: rgba(225, 37, 37, 0.836); */
   background-color: rgba(0, 0, 0, 0);
   margin-top: 7.2px;
   position: absolute !important;
@@ -224,16 +186,16 @@ div.video-overlay {
   line-height: 1.24em;
 }
 
-/* more-than-consulting */
+/* our-culture */
 
-.more-than-consulting {
+.our-culture {
   height: 40.27778vw;
   background-color: var(--light-background-color);
 }
 
-div#more-than-consulting-image-placeholder {
+div#our-culture-image-placeholder {
   position: relative;
-  min-height: 650px;
+  /* min-height: 650px; */
 }
 
 .mtc__img-size {
@@ -248,8 +210,14 @@ div#more-than-consulting-image-placeholder {
 .gir-with-glasses__container,
 .meeting-of-designer__container,
 .young-man-working__container,
+.happy-man__img-container,
+.lady-on-the-bead__img-container,
 .comment__container,
-.comment-text {
+.comment-container__more-then-consutlting,
+.comment-text,
+.achievements__card__trophy-icon,
+.achievements__card__customer-icon,
+.achievements__card__project-icon {
   position: absolute;
 }
 
@@ -287,6 +255,10 @@ div#more-than-consulting-image-placeholder {
   /* min-height: 60%; */
   min-width: 36.77205%;
   /* max-width: 221px; */
+  background: var(--img-overlay),
+    url("assets/images/influencer-with-glasses-sitting-on-couch-holding-c-2022-02-04-18-06-51-utc-min.jpg")
+      no-repeat bottom -2.8vw right;
+  background-size: 100% auto;
 }
 
 .meeting-of-designer__container {
@@ -353,21 +325,24 @@ div#more-than-consulting-image-placeholder {
   color: var(--light-font-color);
 }
 
-#more-than-consulting__text-placeholder {
+#our-culture__text-placeholder {
   text-align: left;
   padding-top: 8.68055vw;
 }
 
-.more-than-consulting__text-placeholder__title {
+.our-culture__text-placeholder__title,
+.more-then-consulting__title,
+.out-core-values__section-title {
   font-family: var(--headings-font);
   font-style: normal;
   font-weight: 900;
   font-size: 1.73611vw;
   letter-spacing: 0.05em;
-  color: #1c2e5a;
+  color: var(--dark-font-color);
 }
 
-.more-than-consulting__text-placeholder__text {
+.our-culture__text-placeholder__text,
+.more-then-consulting__text-placeholder__text {
   color: #6f6f6f;
   padding-top: 2.77777vw;
   font-family: var(--main-text-font);
@@ -394,6 +369,151 @@ div#more-than-consulting-image-placeholder {
   float: right;
 }
 
+/*more-then-consulting*/
+
+.more-then-consulting {
+  height: 45.27778vw;
+  background-color: var(--secondaty-background);
+}
+
+.happy-man__img-container {
+  height: 25.91666vw;
+  width: 17.27777vw;
+  background: var(--img-overlay),
+    url("assets/images/happy-man.jpg") no-repeat top left;
+  background-size: 100% auto;
+  top: 64%;
+  left: 23%;
+}
+
+.lady-on-the-bead__img-container {
+  height: 15.27778vw;
+  width: 22.9167vw;
+  background: var(--img-overlay),
+    url("assets/images/lady-on-the-bead.jpg") no-repeat top left;
+  background-size: 100% auto;
+  top: 14.7%;
+  left: 2%;
+}
+
+.more-then-consulting__text-placeholder {
+  text-align: left;
+  padding-top: 13vw;
+}
+
+.comment-more-then-consutlting {
+  transform: none;
+}
+
+.comment-container__more-then-consutlting {
+  height: 22.91666vw;
+  width: 14.93055vw;
+  top: 46%;
+  left: 53%;
+}
+
+/*our core values*/
+.out-core-values__section-title {
+  padding: 11.5vw 0 7.3vw 0;
+}
+
+.out-core-values__icon-size {
+  height: 6.94444vw;
+  width: 6.94444vw;
+}
+
+.out-core-values__icon-description {
+  font-family: var(--main-text-font);
+  color: var(--dark-font-color);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.38888vw;
+  line-height: 5.55555vw;
+}
+
+.out-core-values {
+  height: 45vw;
+  min-height: 400px;
+  background-color: var(--light-background-color) !important;
+  background: url("assets/images/our-core-values-background-image.png")
+    no-repeat top left;
+  background-size: 100% auto;
+}
+
+.out-core-values__focus-on-outcome-icon {
+  margin: 0 0 0 1vw;
+}
+
+/*achievements*/
+
+.achievements {
+  background-color: var(--secondaty-background);
+  height: 45vw;
+  padding: 9vw 0 0 0;
+}
+
+.achievements__card {
+  background-color: var(--light-background-color);
+  height: 23.5vw;
+  width: 20vw;
+  border-bottom: 0.5vw solid var(--detail-color);
+}
+
+.achievements__card__trophy-icon,
+.achievements__card__project-icon {
+  top: 9.7%;
+  left: 9%;
+}
+
+.achievements__card__customer-icon {
+  top: 9.7%;
+  left: 12%;
+}
+
+.achievements__card__trophy-icon {
+  height: 2.77778vw;
+  width: 3.47222vw;
+}
+
+.achievements__card__customer-icon,
+.achievements__card__project-icon {
+  height: 2.77778vw;
+  width: 2.77778vw;
+}
+
+.achievements__card__number {
+  font-size: 3.47222vw;
+  color: var(--dark-font-color);
+  padding: 8.3vw 0 0 0;
+  font-family: var(--headings-font);
+  font-style: normal;
+  font-weight: 900;
+  margin: 0 0 0 0;
+}
+
+.achievements__card__number-with-plus-sign {
+  margin: 0 0 0 0.7vw;
+}
+
+.achievements__card__description,
+.achievements__card__project-description {
+  font-size: 1.73611vw;
+  color: var(--dark-font-color);
+  font-family: var(--main-text-font);
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.achievements__card__project-description {
+  letter-spacing: 0.05em;
+}
+
+/*helpers*/
+.remove-padding {
+  padding: 0 0 0 0 !important;
+}
+
 /*Footer*/
 
 footer {
@@ -410,7 +530,7 @@ footer div.container.text-center div.row {
 footer h3 {
   font-size: 1.6666666666666667vw;
   font-family: "RNS Sanz";
-  color: #357BCD;
+  color: #357bcd;
   overflow: "hidden";
   margin-bottom: 1.3888888888888888vw;
   font-weight: bold;
@@ -421,13 +541,12 @@ footer ul li a {
   text-decoration: none;
   text-align: left;
   list-style-type: none;
-  color: #D3E8FF;
+  color: #d3e8ff;
   font-family: "RNS Sanz";
   font-size: 1.3888888888888888vw;
   font-weight: normal;
   line-height: 2.9166666666666665vw;
   letter-spacing: 0.015em;
-
 }
 
 footer ul {
@@ -438,19 +557,19 @@ footer .col-md {
   padding: 0vw;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #1c2e5a;
-  color: #D3E8FF;
+  color: #d3e8ff;
   font-size: 1.1111111111111112vw;
   padding: 0.6944444444444444vw 4.8725000000000005vw;
-  border: 0.1388888888888889vw solid #D3E8FF;
+  border: 0.1388888888888889vw solid #d3e8ff;
   font-family: "RNS Sanz";
   font-weight: bold;
   margin-top: 0.8333333333333334vw;
 }
 
-input[type=text] {
-  background-color: #D3E8FF;
+input[type="text"] {
+  background-color: #d3e8ff;
   outline: none;
   font-family: "RNS Sanz";
   font-size: 1.25vw;
@@ -459,7 +578,7 @@ input[type=text] {
 }
 
 .new-shape {
-  fill: #D3E8FF;
+  fill: #d3e8ff;
   width: 2.8472222222222223vw;
   height: 2.8472222222222223vw;
   margin: 0.7291666666666666vw 0.5902777777777778vw 0.625vw 0.5902777777777778vw;
@@ -481,8 +600,20 @@ footer .col-md:nth-child(5) h3 {
   line-height: 1.3888888888888888vw;
 }
 
-/*Mobile version*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 83.6vw !important;
+  }
+}
 
+/*4k version*/
+@media (min-width: 1320px) {
+  div#our-culture-image-placeholder {
+    min-height: 650px;
+  }
+}
+
+/*Mobile version*/
 @media (max-width: 767px) {
   nav {
     margin-top: 0;
@@ -493,7 +624,7 @@ footer .col-md:nth-child(5) h3 {
   }
 
   .container {
-    max-width: 78.4vw;
+    max-width: 72.79069767441861vw;
   }
 
   nav a.logo-placeholder {
@@ -522,6 +653,16 @@ footer .col-md:nth-child(5) h3 {
     object-fit: cover;
   }
 
+  #hamburger__button {
+    padding: 0px 0px 4px 12px;
+    border: none;
+  }
+
+  #hambvurger-icon {
+    height: 8vw;
+    width: 8vw;
+  }
+
   .header__title {
     font-size: 9.3vw;
   }
@@ -546,16 +687,23 @@ footer .col-md:nth-child(5) h3 {
     padding-top: 1.2em;
   }
 
-  .more-than-consulting {
+  .our-culture {
     height: 198vw;
   }
 
-  .more-than-consulting__text-placeholder__title {
+  .our-culture__text-placeholder__title,
+  .more-then-consulting__title,
+  .out-core-values__section-title {
     font-size: 5.8vw;
+  }
+
+  .our-culture__text-placeholder__title,
+  .more-then-consulting__title {
     padding-top: 0.6em;
   }
 
-  .more-than-consulting__text-placeholder__text {
+  .our-culture__text-placeholder__text,
+  .more-then-consulting__text-placeholder__text {
     font-size: 3.73vw;
     padding-top: 2.6em;
     line-height: 5.6vw;
@@ -601,15 +749,141 @@ footer .col-md:nth-child(5) h3 {
     top: 1.299vw;
     left: -6.3vw;
   }
-}
 
-@media (max-width: 767px) {
-  .container {
-    max-width: 72.79069767441861vw ;
+  /*More Then Consulting*/
+  .more-then-consulting {
+    height: 206vw;
   }
 
+  .more-then-consulting__text-placeholder__text {
+    padding-top: 0;
+  }
+
+  .more-then-consulting__title {
+    padding: 11.3vw 0vw 2vw 0;
+    letter-spacing: 0.037em;
+  }
+
+  .more-then-consulting__img-placeholder {
+    height: 50vw;
+  }
+
+  .lady-on-the-bead__img-container {
+    top: 26%;
+    left: 3.5%;
+    height: 30.5vw;
+    width: 45.9167vw;
+  }
+
+  .comment-container__more-then-consutlting {
+    height: 26.91666vw;
+    width: 29.93055vw;
+    top: 71%;
+    left: 58%;
+  }
+
+  .happy-man__img-container {
+    height: 51.91666vw;
+    width: 35.27777vw;
+    top: 95%;
+    left: 25%;
+  }
+
+  .more-then-consutlting__comment-text {
+    padding: 5.5vw 0 0 0;
+  }
+
+  /*our core values*/
+
+  .out-core-values {
+    height: 126vw;
+    background-position: top 0vw left -78vw;
+    background-size: 180% auto;
+  }
+
+  .out-core-values__section-title {
+    padding: 34vw 0 0vw 0;
+  }
+
+  .out-core-values__icon-size {
+    margin: 12.5vw 0 0 0;
+    height: 11.89302vw;
+    width: 11.89302vw;
+  }
+
+  .out-core-values__icon-description {
+    max-width: 18vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3.72093vw;
+    text-align: center;
+    line-height: 4vw;
+    padding: 2.5vw 0 0 0;
+  }
+
+  .out-core-values__focus-on-outcome-icon {
+    margin: 12.5vw 0 0 2vw;
+  }
+
+  #out-core-values__take-ownership-container {
+    padding: 0 0 0 9vw;
+  }
+  #out-core-values__enjoy-your-work-container {
+    padding: 0 9vw 0 0;
+  }
+
+  .out-core-values__take-ownership-icon,
+  .out-core-values__enjoy-your-work-icon {
+    margin-top: 5.5vw;
+  }
+  /*achievements*/
+  .achievements {
+    height: 295vw;
+    padding: 11vw 0 0 0;
+  }
+
+  .achievements__card {
+    background-color: var(--light-background-color);
+    height: 83.5vw;
+    /* width: 72vw; */
+    width: 100%;
+    border-bottom: 2.5vw solid var(--detail-color);
+    margin: 0 0 11vw 0;
+  }
+
+  .achievements__card__number {
+    padding: 30vw 0 0 0;
+    font-size: 11.62791vw;
+  }
+
+  .achievements__card__number-with-plus-sign {
+    margin: 0 0 0 2vw;
+  }
+
+  .achievements__card__description,
+  .achievements__card__project-description {
+    font-size: 5.81395vw;
+  }
+
+  .achievements__card__trophy-icon {
+    height: 9.61162vw;
+    width: 12.01627vw;
+  }
+
+  .achievements__card__project-icon {
+    height: 9.7186vw;
+    width: 9.7186vw;
+  }
+
+  .achievements__card__customer-icon {
+    height: 9.69302vw;
+    width: 9.69302vw;
+  }
+
+  /*footer*/
+
   footer {
-    height: 233.95348837209303vw ;
+    height: 233.95348837209303vw;
   }
 
   footer ul li,
@@ -617,12 +891,12 @@ footer .col-md:nth-child(5) h3 {
     text-decoration: none;
     text-align: left;
     list-style-type: none;
-    color: #D3E8FF;
+    color: #d3e8ff;
     font-family: "RNS Sanz";
-    font-size: 4.651162790697675vw ;
+    font-size: 4.651162790697675vw;
     font-weight: normal;
-    line-height: 9.534883720930234vw ;
-    letter-spacing: 0.015em ;
+    line-height: 9.534883720930234vw;
+    letter-spacing: 0.015em;
   }
 
   footer div.col-md-5:nth-child(1) div ul {
@@ -639,93 +913,92 @@ footer .col-md:nth-child(5) h3 {
 
   footer div.col-md p {
     font-family: "RNS Sanz";
-    color: #D3E8FF;
-    font-size: 4.651162790697675vw ;
-    line-height: 9.534883720930234vw ;
-
+    color: #d3e8ff;
+    font-size: 4.651162790697675vw;
+    line-height: 9.534883720930234vw;
   }
 
   footer div.col-md.order-4 {
-    position: relative ;
-    top: 9.348837209302324vw ;
-    left: -2px
+    position: relative;
+    top: 9.348837209302324vw;
+    left: -2px;
   }
 
   footer div.col-md.order-5 {
-    position: relative ;
+    position: relative;
     top: 33.46511627906977vw;
   }
 
   footer div.col-md:nth-child(2) {
-    text-align: left ;
-    padding-left: 0vw ;
-    letter-spacing: 0.02em ;
-    line-height: 5.5813953488372094vw ;
-    position: relative ;
-    top: 6.976744186046512vw ;
+    text-align: left;
+    padding-left: 0vw;
+    letter-spacing: 0.02em;
+    line-height: 5.5813953488372094vw;
+    position: relative;
+    top: 6.976744186046512vw;
   }
 
   footer div.container.text-center div.row.row-cols-6 {
-    padding-top: 0vw ;
+    padding-top: 0vw;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     background-color: #1c2e5a;
-    color: #D3E8FF;
-    font-size: 3.7209302325581395vw ;
-    padding: 2.3255813953488373vw 16.31720930232558vw ;
-    border: 0.46511627906976744vw solid #D3E8FF ;
+    color: #d3e8ff;
+    font-size: 3.7209302325581395vw;
+    padding: 2.3255813953488373vw 16.31720930232558vw;
+    border: 0.46511627906976744vw solid #d3e8ff;
     font-family: "RNS Sanz";
     font-weight: bold;
-    width: 72.79069767441861vw ;
-    height: 11.534883720930234vw ;
-    line-height: 4.4186046511627906vw ;
-    margin-top: 2.7906976744186047vw ;
+    width: 72.79069767441861vw;
+    height: 11.534883720930234vw;
+    line-height: 4.4186046511627906vw;
+    margin-top: 2.7906976744186047vw;
   }
 
-  input[type=text] {
-    background-color: #D3E8FF;
+  input[type="text"] {
+    background-color: #d3e8ff;
     outline: none;
     font-family: "RNS Sanz";
-    font-size: 4.186046511627907vw ;
-    padding: 1.8604651162790697vw 0vw 1.3953488372093024vw 1.3953488372093024vw ;
+    font-size: 4.186046511627907vw;
+    padding: 1.8604651162790697vw 0vw 1.3953488372093024vw 1.3953488372093024vw;
     border: none;
-    width: 72.79069767441861vw ;
-    height: 9.534883720930234vw ;
-    line-height: 5.5813953488372094vw ;
+    width: 72.79069767441861vw;
+    height: 9.534883720930234vw;
+    line-height: 5.5813953488372094vw;
   }
 
   .new-shape {
-    fill: #D3E8FF;
-    width: 9.534883720930234vw ;
-    height: 9.534883720930234vw ;
-    margin: 1.3953488372093024vw ;
+    fill: #d3e8ff;
+    width: 9.534883720930234vw;
+    height: 9.534883720930234vw;
+    margin: 1.3953488372093024vw;
   }
 
   footer div.container.text-center div.row {
-    padding-top: 20% ;
+    padding-top: 20%;
   }
 
   footer h3 {
-    font-size: 5.5813953488372094vw ;
+    font-size: 5.5813953488372094vw;
     font-family: "RNS Sanz";
-    color: #357BCD;
+    color: #357bcd;
     overflow: "hidden";
-    margin-bottom: 4.651162790697675vw ;
+    margin-bottom: 4.651162790697675vw;
     font-weight: bold;
   }
 
   footer .col-md:nth-child(5) h3 {
-    line-height: 9.388889vw ;
+    line-height: 9.388889vw;
   }
 
   div.col-xs.col-sm.col {
-    padding: 0vw ;
+    padding: 0vw;
   }
 
   hr.solid {
-    position: relative ;
-    top: 62.558139534883715vw ;
-    border: 0.23255813953488372VW solid #357BCD ;
+    position: relative;
+    top: 62.558139534883715vw;
+    border: 0.23255813953488372vw solid #357bcd;
   }
 }
